@@ -435,7 +435,7 @@ Wire Wire Line
 Text Notes 8850 1250 0    50   ~ 0
 Slew Rate Control Resistors
 Text Notes 1500 6300 0    50   ~ 0
-TO DO LIST:\n- pam8106 audio amp + audio controls\n- BA7406 for Composite Sync\n- Audio mono combiner circuit\n- Potentiometers for video signal\n- VGA input option (dreamcasts etc.)\n	- Also for Dreamcast, and Sync combiner will be necessary\n- THS7375 video amp\n- Button Remapping for software
+TO DO LIST:\n- pam8106 audio amp + audio controls\n- BA7406 for Composite Sync\n- Audio mono combiner circuit\n- Potentiometers for video signal\n- VGA input option (dreamcasts etc.)\n	- Also for Dreamcast, and Sync combiner will be necessary\n- THS7375 video amp\n
 $Comp
 L MCU_ST_STM32F0:STM32F030C8Tx U?
 U 1 1 5E0AC6A2
