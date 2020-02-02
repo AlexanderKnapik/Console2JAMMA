@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_02x28_JAMMA
+D JAMMA Standard connector, double row, 02x28, JAMMA pin numbering scheme
+K connector conn JAMMA arcade
+F ~
+$ENDCMP
+#
+#End Doc Library
