@@ -6,4 +6,22 @@ K connector conn JAMMA arcade
 F ~
 $ENDCMP
 #
+$CMP D_TVS_ALT_45deg
+D Bidirectional transient-voltage-suppression diode, filled shape
+K diode TVS thyrector
+F ~
+$ENDCMP
+#
+$CMP IS31AP2110
+D 20W Stereo Class-D Audio Amplifier
+K class d audio amplifier power 20w issi
+F http://www.issi.com/WW/pdf/31AP2110.pdf
+$ENDCMP
+#
+$CMP THS7375
+D 4-Channel SDTV Video Amplifier with 6th-Order Filters and 5.6-V/V Gain
+K Video Amplifier Filter 4 Channel RGB Standard Definition SDTV
+F http://www.ti.com/lit/ds/symlink/ths7375.pdf
+$ENDCMP
+#
 #End Doc Library
