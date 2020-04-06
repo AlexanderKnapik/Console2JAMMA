@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 2)
+    (last_trace_width 0.254)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
@@ -2550,7 +2550,7 @@
   )
 
   (module Resistor_SMD:R_Array_Convex_4x0603 (layer F.Cu) (tedit 58E0A8B2) (tstamp 5E8B21A0)
-    (at 186.2 11.7)
+    (at 302.2 75.55)
     (descr "Chip Resistor Network, ROHM MNR14 (see mnr_g.pdf)")
     (tags "resistor array")
     (path /5E4718F2/5E62D733)
@@ -5731,7 +5731,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E8B27A0)
-    (at 193.1 15.2 270)
+    (at 193.1 15.45 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5E46F7F7/5EF9BA06)
@@ -5767,7 +5767,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E8B2770)
-    (at 191.5 15.2 270)
+    (at 191.5 15.45 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5E46F7F7/5EF9B54E)
@@ -5803,7 +5803,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E8B2740)
-    (at 186.6 15.2125 270)
+    (at 186.6 15.45 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5E46F7F7/5EF37223)
@@ -8313,7 +8313,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric (layer F.Cu) (tedit 5B36C52B) (tstamp 5E8D3E70)
-    (at 189.9 15.2125 270)
+    (at 189.7 15.65 270)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5E46F7F7/5EF18205)

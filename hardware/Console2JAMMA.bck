@@ -1,15 +1,43 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74LVC4245
+D 8-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, TSSOP-24
+K Noninverting Bidirectional
+F https://assets.nexperia.com/documents/data-sheet/74LVC4245A.pdf
+$ENDCMP
+#
 $CMP Conn_02x28_JAMMA
 D JAMMA Standard connector, double row, 02x28, JAMMA pin numbering scheme
 K connector conn JAMMA arcade
 F ~
 $ENDCMP
 #
-$CMP Conn_02x28_Top_Bottom_copy
-D Generic connector, double row, 02x28, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)
-K connector
+$CMP D_TVS_ALT_45deg
+D Bidirectional transient-voltage-suppression diode, filled shape
+K diode TVS thyrector
 F ~
+$ENDCMP
+#
+$CMP IS31AP2110
+D 20W Stereo Class-D Audio Amplifier
+K class d audio amplifier power 20w issi
+F http://www.issi.com/WW/pdf/31AP2110.pdf
+$ENDCMP
+#
+$CMP LM1972
+F http://www.ti.com/lit/ds/symlink/lm1972.pdf
+$ENDCMP
+#
+$CMP THS7375
+D 4-Channel SDTV Video Amplifier with 6th-Order Filters and 5.6-V/V Gain
+K Video Amplifier Filter 4 Channel RGB Standard Definition SDTV
+F http://www.ti.com/lit/ds/symlink/ths7375.pdf
+$ENDCMP
+#
+$CMP TPA3138D2
+D 10 Watt Stereo Class-D Speaker Amplifier
+K 10W class d class-d amplifier speaker
+F http://www.ti.com/lit/ds/symlink/tpa3138d2.pdf
 $ENDCMP
 #
 #End Doc Library
