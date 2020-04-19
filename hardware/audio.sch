@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 4
-Title "Audio Section"
-Date "2020-04-03"
+Sheet 3 4
+Title "JAMMA2Console"
+Date "2020-04-06"
 Rev "1"
 Comp "Gold"
 Comment1 ""
@@ -257,9 +257,9 @@ Text Label 9900 1850 0    50   ~ 0
 Audio_R
 Wire Wire Line
 	9350 2150 9900 2150
-Text Label 7600 2150 2    50   ~ 0
-Audio_L
 Text Label 7600 2250 2    50   ~ 0
+Audio_L
+Text Label 7600 2150 2    50   ~ 0
 Audio_Mono
 Wire Wire Line
 	9350 1450 9500 1450
@@ -268,7 +268,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 1250 9500 1250
 Text Label 9900 2150 0    50   ~ 0
-Audio_L_Mono
+Audio_~Mono~_L
 Wire Wire Line
 	8850 2450 8850 2500
 $Comp
@@ -355,17 +355,6 @@ Wire Notes Line
 Text Notes 6850 700  2    79   ~ 16
 Stereo to Mono Combiner
 $Comp
-L power:+3V3 #PWR0105
-U 1 1 5ED13A6A
-P 3800 6950
-F 0 "#PWR0105" H 3800 6800 50  0001 C CNN
-F 1 "+3V3" H 3815 7123 50  0000 C CNN
-F 2 "" H 3800 6950 50  0001 C CNN
-F 3 "" H 3800 6950 50  0001 C CNN
-	1    3800 6950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5EB61EA7
 P 4000 6450
@@ -382,17 +371,6 @@ Text Notes 3550 6950 0    50   ~ 0
 1SPW
 Text Notes 4150 6950 0    50   ~ 0
 BD
-$Comp
-L power:+3V3 #PWR0104
-U 1 1 5ECD0E42
-P 3800 6300
-F 0 "#PWR0104" H 3800 6150 50  0001 C CNN
-F 1 "+3V3" H 3815 6473 50  0000 C CNN
-F 2 "" H 3800 6300 50  0001 C CNN
-F 3 "" H 3800 6300 50  0001 C CNN
-	1    3800 6300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP1
 U 1 1 5ECE47BC
@@ -1024,7 +1002,7 @@ VOL_LOAD_SHIFT
 Text HLabel 1300 6050 0    50   Input ~ 0
 VOL_DATA_IN
 Text Label 1300 5100 2    50   ~ 0
-Audio_L_Mono
+Audio_~Mono~_L
 Wire Wire Line
 	1300 5100 1600 5100
 Text Label 1300 5600 2    50   ~ 0
@@ -1521,17 +1499,6 @@ Wire Notes Line
 	6900 3300 550  3300
 Wire Notes Line
 	550  550  550  3300
-$Comp
-L power:+3V3 #PWR0123
-U 1 1 5E8426E2
-P 6550 7000
-F 0 "#PWR0123" H 6550 6850 50  0001 C CNN
-F 1 "+3V3" H 6565 7173 50  0000 C CNN
-F 2 "" H 6550 7000 50  0001 C CNN
-F 3 "" H 6550 7000 50  0001 C CNN
-	1    6550 7000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 6850 6400 6850
 Wire Wire Line
@@ -1763,4 +1730,37 @@ Wire Wire Line
 	7600 2150 8350 2150
 Wire Wire Line
 	7600 2250 8350 2250
+$Comp
+L power:+12V #PWR0104
+U 1 1 5EAC0C6E
+P 6550 7000
+F 0 "#PWR0104" H 6550 6850 50  0001 C CNN
+F 1 "+12V" H 6565 7173 50  0000 C CNN
+F 2 "" H 6550 7000 50  0001 C CNN
+F 3 "" H 6550 7000 50  0001 C CNN
+	1    6550 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 5EAD9DB9
+P 3800 6300
+F 0 "#PWR0105" H 3800 6150 50  0001 C CNN
+F 1 "+12V" H 3815 6473 50  0000 C CNN
+F 2 "" H 3800 6300 50  0001 C CNN
+F 3 "" H 3800 6300 50  0001 C CNN
+	1    3800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0123
+U 1 1 5EADA1FC
+P 3800 6950
+F 0 "#PWR0123" H 3800 6800 50  0001 C CNN
+F 1 "+12V" H 3815 7123 50  0000 C CNN
+F 2 "" H 3800 6950 50  0001 C CNN
+F 3 "" H 3800 6950 50  0001 C CNN
+	1    3800 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

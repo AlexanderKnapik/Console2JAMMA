@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title "Video Section"
-Date "2020-04-03"
+Title "JAMMA2Console"
+Date "2020-04-06"
 Rev "1"
 Comp "Gold"
 Comment1 ""
@@ -350,12 +350,12 @@ Wire Notes Line
 $Comp
 L power:+5V #PWR036
 U 1 1 5E7B890F
-P 3300 4700
-F 0 "#PWR036" H 3300 4550 50  0001 C CNN
-F 1 "+5V" H 3315 4873 50  0000 C CNN
-F 2 "" H 3300 4700 50  0001 C CNN
-F 3 "" H 3300 4700 50  0001 C CNN
-	1    3300 4700
+P 3450 4700
+F 0 "#PWR036" H 3450 4550 50  0001 C CNN
+F 1 "+5V" H 3465 4873 50  0000 C CNN
+F 2 "" H 3450 4700 50  0001 C CNN
+F 3 "" H 3450 4700 50  0001 C CNN
+	1    3450 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -385,37 +385,32 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5E82D7A9
-P 3450 4850
+P 3650 4850
 AR Path="/5E46F7F7/5E82D7A9" Ref="C?"  Part="1" 
 AR Path="/5E47086B/5E82D7A9" Ref="C7"  Part="1" 
-F 0 "C7" H 3542 4896 50  0000 L CNN
-F 1 "100n" H 3542 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3450 4850 50  0001 C CNN
-F 3 "~" H 3450 4850 50  0001 C CNN
-	1    3450 4850
+F 0 "C7" H 3742 4896 50  0000 L CNN
+F 1 "100n" H 3742 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3650 4850 50  0001 C CNN
+F 3 "~" H 3650 4850 50  0001 C CNN
+	1    3650 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 4750 3450 4700
+	3650 4750 3650 4700
 Wire Wire Line
-	3450 4700 4150 4700
-Connection ~ 3450 4700
-Wire Wire Line
-	3300 4700 3450 4700
-Wire Wire Line
-	3450 4950 3450 5000
+	3650 4950 3650 5000
 $Comp
 L power:GND #PWR037
 U 1 1 5E83EB9D
-P 3450 5000
-F 0 "#PWR037" H 3450 4750 50  0001 C CNN
-F 1 "GND" H 3455 4827 50  0000 C CNN
-F 2 "" H 3450 5000 50  0001 C CNN
-F 3 "" H 3450 5000 50  0001 C CNN
-	1    3450 5000
+P 3650 5000
+F 0 "#PWR037" H 3650 4750 50  0001 C CNN
+F 1 "GND" H 3655 4827 50  0000 C CNN
+F 2 "" H 3650 5000 50  0001 C CNN
+F 3 "" H 3650 5000 50  0001 C CNN
+	1    3650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 7500 2250 2    50   ~ 0
+Text Label 7500 2050 2    50   ~ 0
 Video_CSYNC
 Wire Wire Line
 	7500 1950 7600 1950
@@ -423,11 +418,11 @@ Wire Wire Line
 	8400 2050 7700 2050
 Wire Wire Line
 	8400 2150 7800 2150
-Text Label 7500 1950 2    50   ~ 0
-Video_Red
-Text Label 7500 2050 2    50   ~ 0
-Video_Green
 Text Label 7500 2150 2    50   ~ 0
+Video_Red
+Text Label 7500 2250 2    50   ~ 0
+Video_Green
+Text Label 7500 1950 2    50   ~ 0
 Video_Blue
 $Comp
 L Device:R_Pack04 RN1
@@ -503,13 +498,7 @@ F 3 "" H 8300 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 10750 1950 2    50   Output ~ 0
-Red
-Text HLabel 10750 2050 2    50   Output ~ 0
-Green
-Text HLabel 10750 2150 2    50   Output ~ 0
 Blue
-Text HLabel 10750 2250 2    50   Output ~ 0
-CSYNC
 Wire Wire Line
 	9500 1950 9600 1950
 Wire Wire Line
@@ -524,17 +513,6 @@ Wire Wire Line
 	7700 2050 7700 2350
 Wire Wire Line
 	7800 2150 7800 2350
-$Comp
-L Device:R_Pack04 RN2
-U 1 1 5E8C2FCA
-P 9800 2150
-F 0 "RN2" V 9383 2150 50  0000 C CNN
-F 1 "75R" V 9474 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 10075 2150 50  0001 C CNN
-F 3 "~" H 9800 2150 50  0001 C CNN
-	1    9800 2150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7500 2050 7700 2050
 Wire Wire Line
@@ -952,15 +930,15 @@ Text Label 4250 1650 2    50   ~ 0
 VGA_CSYNC
 Text Label 4250 1550 2    50   ~ 0
 SCART_CSYNC
-Text HLabel 1100 2250 0    50   Input ~ 0
-VGA_Blue
 Text HLabel 1100 1950 0    50   Input ~ 0
+VGA_Blue
+Text HLabel 1100 2250 0    50   Input ~ 0
 VGA_Green
 Text HLabel 1100 1650 0    50   Input ~ 0
 VGA_Red
-Text HLabel 1100 1850 0    50   Input ~ 0
-SCART_Green
 Text HLabel 1100 2150 0    50   Input ~ 0
+SCART_Green
+Text HLabel 1100 1850 0    50   Input ~ 0
 SCART_Blue
 Text HLabel 1100 1550 0    50   Input ~ 0
 SCART_Red
@@ -1093,24 +1071,24 @@ $EndComp
 $Comp
 L 74xx:74HC86 U4
 U 3 1 5E741D86
-P 2950 4400
-F 0 "U4" H 2950 4725 50  0000 C CNN
-F 1 "74HCT86" H 2950 4634 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2950 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2950 4400 50  0001 C CNN
-	3    2950 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC86 U4
-U 4 1 5E742930
 P 3900 4300
 F 0 "U4" H 3900 4625 50  0000 C CNN
 F 1 "74HCT86" H 3900 4534 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 3900 4300 50  0001 C CNN
-	4    3900 4300
-	1    0    0    -1  
+	3    3900 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC86 U4
+U 4 1 5E742930
+P 2950 4400
+F 0 "U4" H 2950 4725 50  0000 C CNN
+F 1 "74HCT86" H 2950 4634 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2950 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2950 4400 50  0001 C CNN
+	4    2950 4400
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74HC86 U4
@@ -1121,17 +1099,6 @@ F 1 "74HCT86" H 4380 5155 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4150 5200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 4150 5200 50  0001 C CNN
 	5    4150 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR052
-U 1 1 5E87CC9B
-P 7900 900
-F 0 "#PWR052" H 7900 750 50  0001 C CNN
-F 1 "+3V3" H 7915 1073 50  0000 C CNN
-F 2 "" H 7900 900 50  0001 C CNN
-F 3 "" H 7900 900 50  0001 C CNN
-	1    7900 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1162,4 +1129,37 @@ F 3 "" H 800 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	800  800  1050 800 
+Connection ~ 3650 4700
+Wire Wire Line
+	3650 4700 4150 4700
+Wire Wire Line
+	3450 4700 3650 4700
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5E8C2FCA
+P 9800 2150
+F 0 "RN2" V 9383 2150 50  0000 C CNN
+F 1 "75R" V 9474 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 10075 2150 50  0001 C CNN
+F 3 "~" H 9800 2150 50  0001 C CNN
+	1    9800 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0158
+U 1 1 5ED32E3A
+P 7900 900
+F 0 "#PWR0158" H 7900 750 50  0001 C CNN
+F 1 "+5V" H 7915 1073 50  0000 C CNN
+F 2 "" H 7900 900 50  0001 C CNN
+F 3 "" H 7900 900 50  0001 C CNN
+	1    7900 900 
+	1    0    0    -1  
+$EndComp
+Text HLabel 10750 2050 2    50   Output ~ 0
+CSYNC
+Text HLabel 10750 2250 2    50   Output ~ 0
+Green
+Text HLabel 10750 2150 2    50   Output ~ 0
+Red
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-16930784536483264
+16937151350587264
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42462,18 +42462,39 @@ connector Wuerth WR-WTB vertical
 10
 10
 Console2JAMMA
-Conn_SCART_Female
+Conn_SCART_Female_Right_Angle
 Right angled, female SCART connector. KYCON K-SCARTX-022
 conn connector audio video SCART
 0
 21
 21
 Console2JAMMA
+Conn_SCART_Male_Right_Angle
+Right angled, female SCART connector. KYCON K-SCARTX-022
+conn connector audio video SCART
+0
+21
+21
+Console2JAMMA
+DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.63mm_Housed_MountingHolesOffset11.17mm
+15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.29x1.98mm, pin-PCB-offset 8.63mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 11.17mm
+15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.29x1.98mm, pin-PCB-offset 8.63mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 11.17mm
+0
+17
+16
+Console2JAMMA
+DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset8.10mm_Housed_MountingHolesOffset9.52mm
+15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.77x2.84mm, pin-PCB-offset 8.10mm, distance of mounting holes 33.3mm, distance of mounting holes to PCB edge 9.52mm
+15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.77x2.84mm, pin-PCB-offset 8.10mm, distance of mounting holes 33.3mm, distance of mounting holes to PCB edge 9.52mm
+0
+17
+16
+Console2JAMMA
 JAMMA_56_2x28_P3.96mm
 JAMMA Standard card edge connector for PCBs with 58 contacts (polarized)
 conn jamma card-edge arcade
 0
-55
+54
 54
 Console2JAMMA
 PhoenixContact_PTS_1,5_4-5_1x4_P5.00mm_Horizontal
@@ -42489,6 +42510,13 @@ RCA phono jack conn connector audio
 0
 6
 3
+Console2JAMMA
+SW_Push_SPST_NO_Alps_SKRP
+Alps SKRP SPST Tactile Button Switch
+Alps SKRP SPST Tactile Button Switch
+0
+4
+2
 Converter_ACDC
 Converter_ACDC_CUI_PBO-3-Sxx_THT_Vertical
 ACDC-Converter, 3W, CUI PBO-3, THT https://www.cui.com/product/resource/pbo-3.pdf
