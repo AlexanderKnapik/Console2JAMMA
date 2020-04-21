@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 4
 Title "JAMMA2Console"
-Date "2020-04-06"
+Date "2020-04-20"
 Rev "1"
 Comp "Gold"
 Comment1 ""
@@ -2008,7 +2008,7 @@ Wire Wire Line
 Text HLabel 1200 6100 0    50   Input ~ 0
 USB_Detect
 Wire Wire Line
-	4200 6700 4850 6700
+	4200 6700 4450 6700
 Wire Wire Line
 	5950 5400 7050 5400
 Wire Wire Line
@@ -2672,7 +2672,7 @@ Volume_Up
 Text Label 4850 2700 0    50   ~ 0
 Volume_Down
 Wire Wire Line
-	4200 6800 4850 6800
+	4200 6800 4450 6800
 NoConn ~ 4200 6900
 NoConn ~ 4200 5700
 $Comp
@@ -2696,4 +2696,30 @@ Wire Wire Line
 Connection ~ 3100 800 
 Wire Wire Line
 	3100 800  3200 800 
+$Comp
+L Device:R_Small R44
+U 1 1 5EAE5830
+P 4550 6700
+F 0 "R44" V 4500 6500 50  0000 C CNN
+F 1 "10K" V 4500 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 6700 50  0001 C CNN
+F 3 "~" H 4550 6700 50  0001 C CNN
+	1    4550 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 6700 4850 6700
+$Comp
+L Device:R_Small R45
+U 1 1 5EAE5E95
+P 4550 6800
+F 0 "R45" V 4500 6600 50  0000 C CNN
+F 1 "10K" V 4500 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 6800 50  0001 C CNN
+F 3 "~" H 4550 6800 50  0001 C CNN
+	1    4550 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 6800 4850 6800
 $EndSCHEMATC

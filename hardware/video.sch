@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "JAMMA2Console"
-Date "2020-04-06"
+Date "2020-04-20"
 Rev "1"
 Comp "Gold"
 Comment1 ""
