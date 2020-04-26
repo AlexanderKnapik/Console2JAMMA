@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB15_Male_MountingHoles J4
+U 1 1 5EA4AED2
+P 5950 2800
+F 0 "J4" H 6104 2802 50  0000 L CNN
+F 1 "DS1037-15MNCKT74-0CC" H 6104 2711 50  0000 L CNN
+F 2 "Console2JAMMA:DSUB-15_Male_Horizontal_P2.77x2.84mm_EdgePinOffset8.10mm_Housed_MountingHolesOffset9.52mm" H 5950 2800 50  0001 C CNN
+F 3 " ~" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EA51E01
+P 5950 1900
+F 0 "#PWR0101" H 5950 1650 50  0001 C CNN
+F 1 "GND" H 5955 1727 50  0000 C CNN
+F 2 "" H 5950 1900 50  0001 C CNN
+F 3 "" H 5950 1900 50  0001 C CNN
+	1    5950 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5EA57563
+P 4500 2500
+F 0 "J1" H 4650 2550 50  0000 C CNN
+F 1 "KF141R-2.54-7P" H 4900 2450 50  0000 C CNN
+F 2 "Console2JAMMA:CixiKefa_KF141R-2.54-7P_1x7_P2.54mm_Horizontal" H 4500 2500 50  0001 C CNN
+F 3 "~" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J2
+U 1 1 5EA5886E
+P 4500 3200
+F 0 "J2" H 4650 3250 50  0000 C CNN
+F 1 "KF141R-2.54-7P" H 4900 3150 50  0000 C CNN
+F 2 "Console2JAMMA:CixiKefa_KF141R-2.54-7P_1x7_P2.54mm_Horizontal" H 4500 3200 50  0001 C CNN
+F 3 "~" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2200 5500 2200
+Wire Wire Line
+	5500 2200 5500 2100
+Wire Wire Line
+	5500 2100 5650 2100
+Wire Wire Line
+	4700 2300 5650 2300
+Wire Wire Line
+	4700 2400 5650 2400
+Wire Wire Line
+	4700 2500 5650 2500
+Wire Wire Line
+	4700 2600 5650 2600
+Wire Wire Line
+	4700 2700 5650 2700
+Wire Wire Line
+	4700 2800 5650 2800
+Wire Wire Line
+	4700 2900 5650 2900
+Wire Wire Line
+	4700 3000 5650 3000
+Wire Wire Line
+	4700 3100 5650 3100
+Wire Wire Line
+	4700 3200 5650 3200
+Wire Wire Line
+	4700 3300 5650 3300
+Wire Wire Line
+	4700 3400 5650 3400
+Wire Wire Line
+	4700 3500 5650 3500
+NoConn ~ 5650 2200
+$EndSCHEMATC

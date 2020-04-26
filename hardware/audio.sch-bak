@@ -326,12 +326,6 @@ F 3 "~" H 8100 2900 50  0001 C CNN
 	1    8100 2900
 	1    0    0    -1  
 $EndComp
-Text HLabel 9900 1250 2    50   Input ~ 0
-Audio_Select_L
-Text HLabel 9900 1350 2    50   Input ~ 0
-Audio_Select_R
-Text HLabel 9900 1450 2    50   Input ~ 0
-Audio_Select_Mono
 Text Label 9900 1550 0    50   ~ 0
 Audio_L
 Wire Notes Line
@@ -1763,4 +1757,10 @@ F 3 "" H 3800 6950 50  0001 C CNN
 	1    3800 6950
 	1    0    0    -1  
 $EndComp
+Text HLabel 9900 1250 2    50   Input ~ 0
+Audio_Select_~SCART~_EXT
+Text HLabel 9900 1350 2    50   Input ~ 0
+Audio_Select_~SCART~_EXT
+Text HLabel 9900 1450 2    50   Input ~ 0
+Audio_Select_~Mono~_Stereo
 $EndSCHEMATC

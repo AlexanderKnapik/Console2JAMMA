@@ -1,6 +1,6 @@
-(module Conn_SCART_Female_Right_Angle (layer F.Cu) (tedit 5E9EEBD6)
+(module Conn_SCART_KYCON_K-SCARTX-022_Female_Right_Angle (layer F.Cu) (tedit 5EA03819)
   (descr "Right angled, female SCART connector. KYCON K-SCARTX-022")
-  (tags "conn connector audio video SCART")
+  (tags "conn connector audio video SCART right angle female")
   (fp_text reference REF** (at 0 7.5 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

@@ -974,17 +974,6 @@ Wire Wire Line
 	800  2550 800  2600
 Wire Wire Line
 	800  2600 1100 2600
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J10
-U 1 1 5EB8B921
-P 1700 8700
-F 0 "J10" H 1750 8925 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 1750 8926 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 1700 8700 50  0001 C CNN
-F 3 "~" H 1700 8700 50  0001 C CNN
-	1    1700 8700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 8600 1450 8600
 Wire Wire Line
@@ -1440,11 +1429,11 @@ Wire Wire Line
 Wire Wire Line
 	4200 2700 4850 2700
 Wire Wire Line
-	4200 2600 4850 2600
+	4200 2600 4650 2600
 Wire Wire Line
-	4200 2500 4850 2500
+	4200 2100 4650 2100
 Wire Wire Line
-	4200 2400 4850 2400
+	4200 2000 4650 2000
 Text Label 4850 6100 0    50   ~ 0
 P1_Button8
 Text Label 4850 6000 0    50   ~ 0
@@ -1456,15 +1445,13 @@ P1_Button5
 Text Label 1200 6700 2    50   ~ 0
 P1_Button4
 Wire Wire Line
-	4200 2300 4850 2300
+	4200 2300 4650 2300
 Wire Wire Line
-	4200 2200 4850 2200
+	4200 2200 4650 2200
 Text Label 1200 6600 2    50   ~ 0
 P1_Button3
 Text Label 1200 6500 2    50   ~ 0
 P1_Button2
-Wire Wire Line
-	4200 2100 4850 2100
 Text Label 1200 6400 2    50   ~ 0
 P1_Button1
 Wire Wire Line
@@ -1475,8 +1462,6 @@ Text Label 4850 6300 0    50   ~ 0
 P1_Button10
 Text Label 4850 6200 0    50   ~ 0
 P1_Button9
-Wire Wire Line
-	4200 2000 4850 2000
 Text Label 4850 5900 0    50   ~ 0
 P1_Shifter_DIR
 Wire Wire Line
@@ -1958,12 +1943,6 @@ Text HLabel 4850 5500 2    50   Output ~ 0
 VOL_LOAD_SHIFT
 Text HLabel 4850 5400 2    50   Output ~ 0
 VOL_DATA_IN
-Text HLabel 4850 2000 2    50   Output ~ 0
-Audio_Select_L
-Text HLabel 4850 2100 2    50   Output ~ 0
-Audio_Select_R
-Text HLabel 4850 2200 2    50   Output ~ 0
-Audio_Select_Mono
 $Comp
 L MCU_ST_STM32F1:STM32F103V8Tx U8
 U 1 1 5E62D4E4
@@ -1975,14 +1954,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3200 4400
 	1    0    0    -1  
 $EndComp
-Text HLabel 4850 2600 2    50   Output ~ 0
-Video_Select_Red
-Text HLabel 4850 2400 2    50   Output ~ 0
-Video_Select_Green
-Text HLabel 4850 2500 2    50   Output ~ 0
-Video_Select_Blue
-Text HLabel 4850 2300 2    50   Output ~ 0
-Video_Select_CSYNC
 Wire Wire Line
 	4200 5800 4850 5800
 Wire Wire Line
@@ -2722,4 +2693,27 @@ F 3 "~" H 4550 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 6800 4850 6800
+Text HLabel 4650 2600 2    50   Input ~ 0
+Video_Select_~SCART~_VGA
+Text HLabel 4650 2000 2    50   Input ~ 0
+Audio_Select_~SCART~_EXT
+Text HLabel 4650 2200 2    50   Input ~ 0
+UART_TX
+Text HLabel 4650 2300 2    50   Input ~ 0
+UART_RX
+Text HLabel 4650 2100 2    50   Input ~ 0
+Audio_Select_~Mono~_Stereo
+NoConn ~ 4200 2400
+NoConn ~ 4200 2500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J10
+U 1 1 5EAD6B12
+P 1700 8700
+F 0 "J10" H 1750 8925 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1750 8926 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 1700 8700 50  0001 C CNN
+F 3 "~" H 1700 8700 50  0001 C CNN
+	1    1700 8700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

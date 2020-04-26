@@ -19,7 +19,7 @@ U 1 1 5E0DEBB8
 P 2550 2050
 F 0 "J3" H 2550 3470 50  0000 C CNN
 F 1 "SCART-F" H 2550 3379 50  0000 C CNN
-F 2 "Console2JAMMA:Conn_SCART_Female_Right_Angle" H 2550 2100 50  0001 C CNN
+F 2 "Console2JAMMA:Conn_SCART_CS-107_Right_Angle_Female" H 2550 2100 50  0001 C CNN
 F 3 " ~" H 2550 2100 50  0001 C CNN
 	1    2550 2050
 	1    0    0    -1  
@@ -130,10 +130,7 @@ F11 "Red" O R 8400 1400 50
 F12 "Green" O R 8400 1500 50 
 F13 "Blue" O R 8400 1600 50 
 F14 "CSYNC" O R 8400 1700 50 
-F15 "Video_Select_CSYNC" I L 6650 2950 50 
-F16 "Video_Select_Blue" I L 6650 2850 50 
-F17 "Video_Select_Green" I L 6650 2750 50 
-F18 "Video_Select_Red" I L 6650 2650 50 
+F15 "Video_Select_~SCART~_VGA" I L 6650 2450 50 
 $EndSheet
 Wire Wire Line
 	1900 7250 2150 7250
@@ -306,7 +303,7 @@ U 1 1 5E6B2066
 P 3450 7850
 F 0 "J4" H 3500 8867 50  0000 C CNN
 F 1 "DF1BZ-34DP-2.5DSA" H 3500 8776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical" H 3450 7850 50  0001 C CNN
+F 2 "Console2JAMMA:Conn_02x17_DF1BZ-34DP-2.5DSA" H 3450 7850 50  0001 C CNN
 F 3 "~" H 3450 7850 50  0001 C CNN
 	1    3450 7850
 	1    0    0    -1  
@@ -661,15 +658,15 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5EAD9F62
-P 6150 3950
+P 6200 4100
 AR Path="/5E46F7F7/5EAD9F62" Ref="#PWR?"  Part="1" 
 AR Path="/5EAD9F62" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 6150 3700 50  0001 C CNN
-F 1 "GND" H 6155 3777 50  0000 C CNN
-F 2 "" H 6150 3950 50  0001 C CNN
-F 3 "" H 6150 3950 50  0001 C CNN
-	1    6150 3950
-	0    -1   1    0   
+F 0 "#PWR016" H 6200 3850 50  0001 C CNN
+F 1 "GND" H 6205 3927 50  0000 C CNN
+F 2 "" H 6200 4100 50  0001 C CNN
+F 3 "" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1200 9150 1400 9150
@@ -937,41 +934,41 @@ P2_LK
 $Comp
 L Connector_Generic:Conn_01x04 J8
 U 1 1 5F41B61E
-P 9600 3950
-F 0 "J8" H 9680 3942 50  0000 L CNN
-F 1 "Phoenix PTS 1,5/4-5.0" H 9680 3851 50  0000 L CNN
-F 2 "Console2JAMMA:PhoenixContact_PTS_1,5_4-5_1x4_P5.00mm_Horizontal" H 9600 3950 50  0001 C CNN
-F 3 "~" H 9600 3950 50  0001 C CNN
-	1    9600 3950
+P 9600 3850
+F 0 "J8" H 9680 3842 50  0000 L CNN
+F 1 "Phoenix PTS 1,5/4-5.0" H 9680 3751 50  0000 L CNN
+F 2 "Console2JAMMA:PhoenixContact_PTS_1,5_4-5_1x4_P5.00mm_Horizontal" H 9600 3850 50  0001 C CNN
+F 3 "~" H 9600 3850 50  0001 C CNN
+	1    9600 3850
 	1    0    0    -1  
 $EndComp
 Text Notes 2700 6450 0    50   ~ 0
-TO DO LIST:\n- Potentiometers for video signal?\n- Microcontroller VBAT\n
+TO DO LIST:\n- Potentiometers for video signal?\n   Might just rely on ones integrated on the monitor?\n- Eventually swap audio control IC to M62429 (In Revision 2)
+Wire Wire Line
+	8350 3950 9400 3950
 Wire Wire Line
 	8350 4050 9400 4050
 Wire Wire Line
-	8350 4150 9400 4150
+	8350 3850 8650 3850
 Wire Wire Line
-	8350 3950 8650 3950
+	8350 3750 8750 3750
+Connection ~ 8750 3750
 Wire Wire Line
-	8350 3850 8750 3850
-Connection ~ 8750 3850
+	8750 3750 9400 3750
+Connection ~ 8650 3850
 Wire Wire Line
-	8750 3850 9400 3850
-Connection ~ 8650 3950
+	8650 3850 9400 3850
 Wire Wire Line
-	8650 3950 9400 3950
+	8650 3300 8650 3850
 Wire Wire Line
-	8650 3400 8650 3950
+	8750 3400 8750 3750
 Wire Wire Line
-	8750 3500 8750 3850
+	8650 3300 9550 3300
 Wire Wire Line
-	8650 3400 9550 3400
-Wire Wire Line
-	8750 3500 9550 3500
-Text Label 9550 3400 2    50   ~ 0
+	8750 3400 9550 3400
+Text Label 9550 3300 2    50   ~ 0
 Speaker_JAMMA-
-Text Label 9550 3500 2    50   ~ 0
+Text Label 9550 3400 2    50   ~ 0
 Speaker_JAMMA+
 Text Label 8800 1400 0    50   ~ 0
 Video_Red
@@ -990,24 +987,23 @@ Wire Wire Line
 Wire Wire Line
 	8400 1700 8800 1700
 $Sheet
-S 6650 3350 1700 1900
+S 6650 3250 1700 1900
 U 5E46F7F7
 F0 "Audio" 50
 F1 "audio.sch" 50
-F2 "SCART_Audio_L" I L 6650 3450 50 
-F3 "SCART_Audio_R" I L 6650 3550 50 
-F4 "EXT_Audio_R" I L 6650 4050 50 
-F5 "EXT_Audio_L" I L 6650 4150 50 
-F6 "Audio_Select_L" I L 6650 4950 50 
-F7 "Audio_Select_R" I L 6650 5050 50 
-F8 "Audio_Select_Mono" I L 6650 5150 50 
-F9 "Speaker_L_Mono+" O R 8350 3950 50 
-F10 "Speaker_L_Mono-" O R 8350 3850 50 
-F11 "Speaker_R+" O R 8350 4050 50 
-F12 "Speaker_R-" O R 8350 4150 50 
-F13 "VOL_CLK" I L 6650 4550 50 
-F14 "VOL_LOAD_SHIFT" I L 6650 4650 50 
-F15 "VOL_DATA_IN" I L 6650 4750 50 
+F2 "SCART_Audio_L" I L 6650 3350 50 
+F3 "SCART_Audio_R" I L 6650 3450 50 
+F4 "EXT_Audio_R" I L 6650 3950 50 
+F5 "EXT_Audio_L" I L 6650 4050 50 
+F6 "Speaker_L_Mono+" O R 8350 3850 50 
+F7 "Speaker_L_Mono-" O R 8350 3750 50 
+F8 "Speaker_R+" O R 8350 3950 50 
+F9 "Speaker_R-" O R 8350 4050 50 
+F10 "VOL_CLK" I L 6650 4550 50 
+F11 "VOL_LOAD_SHIFT" I L 6650 4650 50 
+F12 "VOL_DATA_IN" I L 6650 4750 50 
+F13 "Audio_Select_~SCART~_EXT" I L 6650 4950 50 
+F14 "Audio_Select_~Mono~_Stereo" I L 6650 5050 50 
 $EndSheet
 $Comp
 L power:GND #PWR017
@@ -1080,14 +1076,14 @@ Wire Wire Line
 	6150 1050 6650 1050
 Wire Wire Line
 	6150 1150 6650 1150
-Text Label 6150 3450 2    50   ~ 0
+Text Label 6150 3350 2    50   ~ 0
 SCART_Audio_L
-Text Label 6150 3550 2    50   ~ 0
+Text Label 6150 3450 2    50   ~ 0
 SCART_Audio_R
 Wire Wire Line
-	6150 3450 6650 3450
+	6150 3350 6650 3350
 Wire Wire Line
-	6150 3550 6650 3550
+	6150 3450 6650 3450
 Wire Wire Line
 	6650 4550 6150 4550
 Wire Wire Line
@@ -1098,8 +1094,6 @@ Wire Wire Line
 	6650 4950 6150 4950
 Wire Wire Line
 	6650 5050 6150 5050
-Wire Wire Line
-	6650 5150 6150 5150
 Wire Wire Line
 	6650 1600 6150 1600
 Wire Wire Line
@@ -1164,7 +1158,7 @@ Wire Wire Line
 	8350 8700 9250 8700
 Wire Wire Line
 	8350 8800 9250 8800
-Text Notes 10600 3850 2    50   ~ 0
+Text Notes 10600 3750 2    50   ~ 0
 To External Connector
 Text Notes 5200 3250 0    50   ~ 0
 Line Level Audio Input
@@ -1378,68 +1372,18 @@ Wire Wire Line
 	6650 9000 6400 9000
 Wire Wire Line
 	6650 9100 6400 9100
-Wire Wire Line
-	6650 9300 6400 9300
-Wire Wire Line
-	6650 9400 6400 9400
-Wire Wire Line
-	6650 9500 6400 9500
 Text Label 6150 4550 2    50   ~ 0
 VOL_CLK
 Text Label 6150 4650 2    50   ~ 0
 VOL_LOAD_SHIFT
 Text Label 6150 4750 2    50   ~ 0
 VOL_DATA_IN
-Text Label 6150 4950 2    50   ~ 0
-Audio_Select_L
-Text Label 6150 5050 2    50   ~ 0
-Audio_Select_R
-Text Label 6150 5150 2    50   ~ 0
-Audio_Select_Mono
 Text Label 6400 8900 2    50   ~ 0
 VOL_CLK
 Text Label 6400 9000 2    50   ~ 0
 VOL_LOAD_SHIFT
 Text Label 6400 9100 2    50   ~ 0
 VOL_DATA_IN
-Text Label 6400 9300 2    50   ~ 0
-Audio_Select_L
-Text Label 6400 9400 2    50   ~ 0
-Audio_Select_R
-Text Label 6400 9500 2    50   ~ 0
-Audio_Select_Mono
-Wire Wire Line
-	6650 9700 6400 9700
-Wire Wire Line
-	6650 9800 6400 9800
-Wire Wire Line
-	6650 9900 6400 9900
-Wire Wire Line
-	6650 10000 6400 10000
-Text Label 6400 9700 2    50   ~ 0
-Video_Select_Red
-Text Label 6400 9800 2    50   ~ 0
-Video_Select_Green
-Text Label 6400 9900 2    50   ~ 0
-Video_Select_Blue
-Text Label 6400 10000 2    50   ~ 0
-Video_Select_CSYNC
-Wire Wire Line
-	6650 2650 6150 2650
-Wire Wire Line
-	6650 2750 6150 2750
-Wire Wire Line
-	6650 2850 6150 2850
-Wire Wire Line
-	6650 2950 6150 2950
-Text Label 6150 2650 2    50   ~ 0
-Video_Select_Red
-Text Label 6150 2750 2    50   ~ 0
-Video_Select_Green
-Text Label 6150 2850 2    50   ~ 0
-Video_Select_Blue
-Text Label 6150 2950 2    50   ~ 0
-Video_Select_CSYNC
 $Comp
 L Regulator_Linear:LD1117S33TR_SOT223 U2
 U 1 1 5FA6373C
@@ -1566,7 +1510,7 @@ Wire Wire Line
 	8500 9400 8500 9800
 Wire Wire Line
 	8500 9800 8350 9800
-Text Notes 10000 3250 0    50   ~ 0
+Text Notes 10000 3150 0    50   ~ 0
 To JAMMA Edge
 NoConn ~ 2650 4750
 Wire Wire Line
@@ -1661,17 +1605,13 @@ L Connector:USB_B_Mini J9
 U 1 1 5F0A6E31
 P 10850 10100
 F 0 "J9" H 10620 10089 50  0000 R CNN
-F 1 "USB_B_Mini" H 10620 9998 50  0000 R CNN
-F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 11000 10050 50  0001 C CNN
+F 1 "Molex 67503-1020" H 10620 9998 50  0000 R CNN
+F 2 "Console2JAMMA:USB_Mini-B_Molex_657031020_Horizontal" H 11000 10050 50  0001 C CNN
 F 3 "~" H 11000 10050 50  0001 C CNN
 	1    10850 10100
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 10550 10300
-Wire Wire Line
-	6150 4050 6650 4050
-Wire Wire Line
-	6150 4150 6650 4150
 $Comp
 L Device:R_Small R9
 U 1 1 5E9A5AC3
@@ -1797,40 +1737,38 @@ F32 "VCC" I R 8350 5600 50
 F33 "VOL_CLK" O L 6650 8900 50 
 F34 "VOL_LOAD_SHIFT" O L 6650 9000 50 
 F35 "VOL_DATA_IN" O L 6650 9100 50 
-F36 "Audio_Select_L" O L 6650 9300 50 
-F37 "Audio_Select_R" O L 6650 9400 50 
-F38 "Audio_Select_Mono" O L 6650 9500 50 
-F39 "P1_1" B R 8350 5800 50 
-F40 "P1_2" B R 8350 5900 50 
-F41 "P1_3" B R 8350 6000 50 
-F42 "P1_4" B R 8350 6100 50 
-F43 "P1_5" B R 8350 6200 50 
-F44 "P1_6" B R 8350 6300 50 
-F45 "P1_7" B R 8350 6400 50 
-F46 "P1_8" B R 8350 6500 50 
-F47 "P1_9" B R 8350 6600 50 
-F48 "P1_10" B R 8350 6700 50 
-F49 "P1_11" B R 8350 6800 50 
-F50 "P1_12" B R 8350 6900 50 
-F51 "P2_1" B R 8350 7700 50 
-F52 "P2_2" B R 8350 7800 50 
-F53 "P2_3" B R 8350 7900 50 
-F54 "P2_4" B R 8350 8000 50 
-F55 "P2_5" B R 8350 8100 50 
-F56 "P2_6" B R 8350 8200 50 
-F57 "P2_7" B R 8350 8300 50 
-F58 "P2_8" B R 8350 8400 50 
-F59 "P2_9" B R 8350 8500 50 
-F60 "P2_10" B R 8350 8600 50 
-F61 "P2_11" B R 8350 8700 50 
-F62 "P2_12" B R 8350 8800 50 
-F63 "USB_D-" B R 8350 10000 50 
-F64 "USB_D+" B R 8350 9800 50 
-F65 "Video_Select_Red" O L 6650 9700 50 
-F66 "Video_Select_Green" O L 6650 9800 50 
-F67 "Video_Select_Blue" O L 6650 9900 50 
-F68 "Video_Select_CSYNC" O L 6650 10000 50 
-F69 "USB_Detect" I R 8350 10550 50 
+F36 "P1_1" B R 8350 5800 50 
+F37 "P1_2" B R 8350 5900 50 
+F38 "P1_3" B R 8350 6000 50 
+F39 "P1_4" B R 8350 6100 50 
+F40 "P1_5" B R 8350 6200 50 
+F41 "P1_6" B R 8350 6300 50 
+F42 "P1_7" B R 8350 6400 50 
+F43 "P1_8" B R 8350 6500 50 
+F44 "P1_9" B R 8350 6600 50 
+F45 "P1_10" B R 8350 6700 50 
+F46 "P1_11" B R 8350 6800 50 
+F47 "P1_12" B R 8350 6900 50 
+F48 "P2_1" B R 8350 7700 50 
+F49 "P2_2" B R 8350 7800 50 
+F50 "P2_3" B R 8350 7900 50 
+F51 "P2_4" B R 8350 8000 50 
+F52 "P2_5" B R 8350 8100 50 
+F53 "P2_6" B R 8350 8200 50 
+F54 "P2_7" B R 8350 8300 50 
+F55 "P2_8" B R 8350 8400 50 
+F56 "P2_9" B R 8350 8500 50 
+F57 "P2_10" B R 8350 8600 50 
+F58 "P2_11" B R 8350 8700 50 
+F59 "P2_12" B R 8350 8800 50 
+F60 "USB_D-" B R 8350 10000 50 
+F61 "USB_D+" B R 8350 9800 50 
+F62 "USB_Detect" I R 8350 10550 50 
+F63 "Video_Select_~SCART~_VGA" I L 6650 9700 50 
+F64 "Audio_Select_~SCART~_EXT" I L 6650 9300 50 
+F65 "UART_TX" I L 6650 10000 50 
+F66 "UART_RX" I L 6650 10100 50 
+F67 "Audio_Select_~Mono~_Stereo" I L 6650 9400 50 
 $EndSheet
 $Comp
 L power:GND #PWR0152
@@ -1862,32 +1800,113 @@ Wire Wire Line
 	8350 5800 9250 5800
 NoConn ~ 9250 7600
 Wire Notes Line
-	10600 3150 10600 3650
+	10600 3050 10600 3550
 Wire Notes Line
-	10600 3650 8550 3650
+	10600 3550 8550 3550
 Wire Notes Line
-	8550 3650 8550 3150
+	8550 3550 8550 3050
 Wire Notes Line
-	8550 3150 10600 3150
+	8550 3050 10600 3050
 Wire Notes Line
-	8550 3700 10600 3700
+	8550 3600 10600 3600
 Wire Notes Line
-	10600 3700 10600 4300
+	10600 3600 10600 4200
 Wire Notes Line
-	10600 4300 8550 4300
+	10600 4200 8550 4200
 Wire Notes Line
-	8550 4300 8550 3700
+	8550 4200 8550 3600
+Text Notes 5600 4150 2    50   ~ 0
+3.5mm Audio in
+Wire Wire Line
+	6650 9300 6400 9300
+Wire Wire Line
+	6650 9400 6400 9400
+Wire Wire Line
+	6650 9700 6400 9700
+Wire Wire Line
+	6650 10000 6400 10000
+Wire Wire Line
+	6650 10100 6400 10100
+Text Label 6400 9300 2    50   ~ 0
+Audio_Select_~SCART~_EXT
+Text Label 6400 9400 2    50   ~ 0
+Audio_Select_~Mono~_Stereo
+Text Label 6400 9700 2    50   ~ 0
+Video_Select_~SCART~_VGA
+Text Label 6150 2450 2    50   ~ 0
+Video_Select_~SCART~_VGA
+Wire Wire Line
+	6150 2450 6650 2450
+Text Label 6150 4950 2    50   ~ 0
+Audio_Select_~SCART~_EXT
+Text Label 6150 5050 2    50   ~ 0
+Audio_Select_~Mono~_Stereo
 $Comp
-L Connector:AudioJack3 J5
-U 1 1 5EA33BE7
-P 5950 4050
-F 0 "J5" H 5932 4283 50  0000 C CNN
-F 1 "AudioJack3" H 5932 4284 50  0001 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 5950 4050 50  0001 C CNN
-F 3 "~" H 5950 4050 50  0001 C CNN
-	1    5950 4050
+L Connector_Generic:Conn_01x03 J13
+U 1 1 5EE77FE2
+P 6200 10100
+F 0 "J13" H 6118 10325 50  0000 C CNN
+F 1 "Conn_01x03" H 6118 10326 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6200 10100 50  0001 C CNN
+F 3 "~" H 6200 10100 50  0001 C CNN
+	1    6200 10100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 5EE78BB6
+P 6400 10200
+F 0 "#PWR0159" H 6400 9950 50  0001 C CNN
+F 1 "GND" H 6405 10027 50  0000 C CNN
+F 2 "" H 6400 10200 50  0001 C CNN
+F 3 "" H 6400 10200 50  0001 C CNN
+	1    6400 10200
 	1    0    0    -1  
 $EndComp
-Text Notes 5700 3950 2    50   ~ 0
-3.5mm Audio in
+$Comp
+L Connector:AudioJack4 J5
+U 1 1 5EA51098
+P 5950 3850
+F 0 "J5" H 5907 4175 50  0000 C CNN
+F 1 "PJ-320D" H 5907 4084 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 5950 3850 50  0001 C CNN
+F 3 "~" H 5950 3850 50  0001 C CNN
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4050 6650 4050
+Wire Wire Line
+	6150 3750 6200 3750
+Wire Wire Line
+	6200 3750 6200 3850
+Wire Wire Line
+	6150 3850 6200 3850
+Connection ~ 6200 3850
+Wire Wire Line
+	6200 3850 6200 4100
+Wire Wire Line
+	6150 3950 6650 3950
+$Comp
+L Mechanical:Heatsink_Pad HS1
+U 1 1 5EB35BF0
+P 11300 1000
+F 0 "HS1" H 11441 1039 50  0000 L CNN
+F 1 "573100D00010G" H 11441 948 50  0000 L CNN
+F 2 "Console2JAMMA:Heatsink_AAVID_573100D000x0G_TO-252" H 11312 950 50  0001 C CNN
+F 3 "~" H 11312 950 50  0001 C CNN
+	1    11300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 5EB366A6
+P 11300 1100
+F 0 "#PWR0160" H 11300 850 50  0001 C CNN
+F 1 "GND" H 11305 927 50  0000 C CNN
+F 2 "" H 11300 1100 50  0001 C CNN
+F 3 "" H 11300 1100 50  0001 C CNN
+	1    11300 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

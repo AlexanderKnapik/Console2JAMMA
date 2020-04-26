@@ -1,4 +1,4 @@
-16946683494287264
+16951447066047264
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42462,6 +42462,13 @@ connector Wuerth WR-WTB vertical
 10
 10
 Console2JAMMA
+CixiKefa_KF141R-2.54-7P_1x7_P2.54mm_Horizontal
+
+
+0
+0
+0
+Console2JAMMA
 Conn_02x17_DF1BZ-34DP-2.5DSA
 
 
@@ -42504,12 +42511,19 @@ DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset8.10mm_Housed_MountingHolesO
 17
 16
 Console2JAMMA
+DSUB-15_Male_Horizontal_P2.77x2.84mm_EdgePinOffset8.10mm_Housed_MountingHolesOffset9.52mm
+
+
+0
+17
+16
+Console2JAMMA
 Heatsink_AAVID_573100D000x0G_TO-252
 Heatsink, 8mm x 22.86mm x 10.16, SMD, TO-252, D Pak, https://www.boydcorp.com/aavid-datasheets/Board-Level-Cooling-Surface-Mount-5731.pdf
 Heatsink AAVID TO-252 D Pak SMD
 0
 2
-2
+1
 Console2JAMMA
 JAMMA_56_2x28_P3.96mm
 JAMMA Standard card edge connector for PCBs with 58 contacts (polarized)
@@ -42531,6 +42545,13 @@ Jack_3.5mm_HRO_PJ-320D-SMT_Horizontal
 0
 0
 0
+Console2JAMMA
+NingboKangnex_WJ250B-3.5_1x5_P3.5mm_Horizontal
+
+
+0
+5
+5
 Console2JAMMA
 PhoenixContact_PTS_1,5_4-5_1x4_P5.00mm_Horizontal
 

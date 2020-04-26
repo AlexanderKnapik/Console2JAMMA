@@ -607,14 +607,6 @@ Wire Wire Line
 	5450 1350 5500 1350
 Wire Wire Line
 	5450 1550 5950 1550
-Text HLabel 5950 1250 2    50   Input ~ 0
-Video_Select_CSYNC
-Text HLabel 2900 1450 2    50   Input ~ 0
-Video_Select_Blue
-Text HLabel 2900 1350 2    50   Input ~ 0
-Video_Select_Green
-Text HLabel 2900 1250 2    50   Input ~ 0
-Video_Select_Red
 $Comp
 L power:GND #PWR046
 U 1 1 5E671E87
@@ -630,36 +622,6 @@ Wire Wire Line
 	5500 2250 5500 2500
 Wire Wire Line
 	5450 2250 5500 2250
-$Comp
-L power:GND #PWR044
-U 1 1 5E661AE6
-P 4400 2500
-F 0 "#PWR044" H 4400 2250 50  0001 C CNN
-F 1 "GND" H 4405 2327 50  0000 C CNN
-F 2 "" H 4400 2500 50  0001 C CNN
-F 3 "" H 4400 2500 50  0001 C CNN
-	1    4400 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2250 4400 2500
-Connection ~ 4400 2250
-Wire Wire Line
-	4400 2250 4450 2250
-Wire Wire Line
-	4400 2150 4400 2250
-Connection ~ 4400 2150
-Wire Wire Line
-	4400 2150 4450 2150
-Wire Wire Line
-	4400 1950 4400 2150
-Connection ~ 4400 1950
-Wire Wire Line
-	4400 1950 4450 1950
-Wire Wire Line
-	4400 1850 4400 1950
-Wire Wire Line
-	4450 1850 4400 1850
 Text Label 5950 1550 0    50   ~ 0
 Video_CSYNC
 Wire Wire Line
@@ -1162,4 +1124,16 @@ Text HLabel 10750 2250 2    50   Output ~ 0
 Green
 Text HLabel 10750 2150 2    50   Output ~ 0
 Red
+Text HLabel 2900 1250 2    50   Input ~ 0
+Video_Select_~SCART~_VGA
+Text HLabel 2900 1350 2    50   Input ~ 0
+Video_Select_~SCART~_VGA
+Text HLabel 2900 1450 2    50   Input ~ 0
+Video_Select_~SCART~_VGA
+Text HLabel 5950 1250 2    50   Input ~ 0
+Video_Select_~SCART~_VGA
+NoConn ~ 4450 1850
+NoConn ~ 4450 1950
+NoConn ~ 4450 2150
+NoConn ~ 4450 2250
 $EndSCHEMATC
