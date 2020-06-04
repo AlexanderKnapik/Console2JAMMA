@@ -28,6 +28,12 @@ $CMP LM1972
 F http://www.ti.com/lit/ds/symlink/lm1972.pdf
 $ENDCMP
 #
+$CMP PAM8610
+D 10W Stereo Class-D Audio Power Amplifier with DC Volume Control
+K PAM Diodes Inc. Class-D D Amplifier 10W 8 Ohm 15W 4 Ohm Stereo Volume Control
+F https://pdf1.alldatasheet.com/datasheet-pdf/view/246508/PAM/PAM8610/+Q_552-VMvLaRDPwCtt+/datasheet.pdf
+$ENDCMP
+#
 $CMP THS7375
 D 4-Channel SDTV Video Amplifier with 6th-Order Filters and 5.6-V/V Gain
 K Video Amplifier Filter 4 Channel RGB Standard Definition SDTV

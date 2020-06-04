@@ -44,7 +44,7 @@ F 1 "KF141R-2.54-7P" H 4900 2450 50  0000 C CNN
 F 2 "Console2JAMMA:CixiKefa_KF141R-2.54-7P_1x7_P2.54mm_Horizontal" H 4500 2500 50  0001 C CNN
 F 3 "~" H 4500 2500 50  0001 C CNN
 	1    4500 2500
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x07 J2
@@ -55,7 +55,7 @@ F 1 "KF141R-2.54-7P" H 4900 3150 50  0000 C CNN
 F 2 "Console2JAMMA:CixiKefa_KF141R-2.54-7P_1x7_P2.54mm_Horizontal" H 4500 3200 50  0001 C CNN
 F 3 "~" H 4500 3200 50  0001 C CNN
 	1    4500 3200
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4700 2200 5500 2200

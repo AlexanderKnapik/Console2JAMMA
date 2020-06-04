@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "JAMMA2Console"
-Date "2020-04-20"
-Rev "1"
+Date "2020-05-01"
+Rev "2"
 Comp "Gold"
 Comment1 ""
 Comment2 ""
@@ -155,7 +155,7 @@ L Device:R R6
 U 1 1 5E5651A5
 P 5650 4650
 F 0 "R6" V 5443 4650 50  0000 C CNN
-F 1 "620" V 5534 4650 50  0000 C CNN
+F 1 "620R" V 5534 4650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 4650 50  0001 C CNN
 F 3 "~" H 5650 4650 50  0001 C CNN
 	1    5650 4650

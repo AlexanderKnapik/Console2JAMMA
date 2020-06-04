@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 4
 Title "JAMMA2Console"
-Date "2020-04-20"
-Rev "1"
+Date "2020-05-01"
+Rev "2"
 Comp "Gold"
 Comment1 ""
 Comment2 ""
@@ -701,8 +701,8 @@ $Comp
 L Device:C_Small C18
 U 1 1 5E8DE54D
 P 1050 2850
-F 0 "C18" V 821 2850 50  0000 C CNN
-F 1 "C_Small" V 912 2850 50  0000 C CNN
+F 0 "C18" V 950 2750 50  0000 C CNN
+F 1 "8p" V 950 2950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1050 2850 50  0001 C CNN
 F 3 "~" H 1050 2850 50  0001 C CNN
 	1    1050 2850
@@ -712,8 +712,8 @@ $Comp
 L Device:C_Small C19
 U 1 1 5E8DF096
 P 1050 3150
-F 0 "C19" V 821 3150 50  0000 C CNN
-F 1 "C_Small" V 912 3150 50  0000 C CNN
+F 0 "C19" V 950 3050 50  0000 C CNN
+F 1 "8p" V 950 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1050 3150 50  0001 C CNN
 F 3 "~" H 1050 3150 50  0001 C CNN
 	1    1050 3150
@@ -791,7 +791,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 2700 2200 2700
 Wire Wire Line
-	1300 3150 2200 3150
+	1300 3150 1750 3150
 $Comp
 L Device:C_Small C17
 U 1 1 5EAF88E2
@@ -2716,4 +2716,17 @@ F 3 "~" H 1700 8700 50  0001 C CNN
 	1    1700 8700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R46
+U 1 1 5EAFFA22
+P 1850 3150
+F 0 "R46" V 1654 3150 50  0000 C CNN
+F 1 "1K5" V 1745 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1850 3150 50  0001 C CNN
+F 3 "~" H 1850 3150 50  0001 C CNN
+	1    1850 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3150 2200 3150
 $EndSCHEMATC
