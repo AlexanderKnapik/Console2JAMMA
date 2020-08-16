@@ -1,4 +1,4 @@
-update=Thu 04 Jun 2020 10:27:43
+update=Mon 22 Jun 2020 06:37:55
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,8 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[SchematicFrame]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -34,15 +36,8 @@ ERC_CheckBusDriverConflicts=1
 ERC_CheckBusEntryConflicts=1
 ERC_CheckBusToBusConflicts=1
 ERC_CheckBusToNetConflicts=1
-[LibeditFrame]
+[ModEditFrame]
 version=1
-[SchematicFrame]
-version=1
-[sheetnames]
-1=581db049-3637-4f38-ae49-a128d653cb5c:
-2=00000000-0000-0000-0000-00005e47086b:Video
-3=00000000-0000-0000-0000-00005e46f7f7:Audio
-4=00000000-0000-0000-0000-00005e4718f2:Digital I/O
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -56,14 +51,14 @@ CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
-MinClearance=0.1524
-MinTrackWidth=0.1524
+MinClearance=0.15
+MinTrackWidth=0.152
 MinViaAnnulus=0.15
 MinViaDiameter=0.6
 MinThroughDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
-MinHoleToHole=0.254
+MinHoleToHole=0.25
 Unconnected_items=error
 Track_too_close_to_hole=error
 Track_too_close_to_pad=error
@@ -77,6 +72,8 @@ Track_ends_too_close=error
 Parallel_tracks_too_close=error
 Tracks_crossing=error
 Track_too_close_to_board_edge=error
+Via_too_close_to_board_edge=error
+Pad_too_close_to_board_edge=error
 Pads_too_close=error
 Pad_too_close_to_copper_item=error
 Copper_areas_intersect=error
@@ -88,6 +85,7 @@ Hole_too_close_to_pad=error
 Hole_too_close_to_track=error
 Drilled_holes_too_close_together=error
 Track_width_too_small=error
+Track_width_too_large=error
 Via_size_too_small=error
 Via_annulus_too_small=error
 Via_drill_too_small=error
@@ -106,9 +104,14 @@ NetClass_Via_Drill_too_small=error
 NetClass_uVia_Dia_too_small=error
 NetClass_uVia_Drill_too_small=error
 Via_inside_keepout_area=error
+Micro_via_inside_keepout_area=error
+Buried_via_inside_keepout_area=error
 Track_inside_keepout_area=error
 Pad_inside_keepout_area=error
 Footprint_inside_keepout_area=error
+Hole_inside_keepout_area=error
+Text_inside_keepout_area=error
+Graphic_inside_keepout_area=error
 Courtyards_overlap=error
 Footprint_has_no_courtyard_defined=ignore
 Footprint_has_malformed_courtyard=error
@@ -120,10 +123,10 @@ Missing_footprint=warning
 Duplicate_footprints=warning
 Extra_footprint=warning
 Unresolved_text_variable=error
-CopperEdgeClearance=1
+CopperEdgeClearance=0.5
 TrackWidth1=0.1524
 TrackWidth2=0.1524
-TrackWidth3=0.170266
+TrackWidth3=0.187
 TrackWidth4=0.2032
 TrackWidth5=0.254
 TrackWidth6=0.4064
@@ -351,3 +354,10 @@ uViaDrill=0.1
 dPairWidth=0.220803
 dPairGap=0.290149
 dPairViaGap=0.25
+[LibeditFrame]
+version=1
+[sheetnames]
+1=76af7246-0f95-474a-a17f-e25b1deaf846:
+2=00000000-0000-0000-0000-00005e47086b:Video
+3=00000000-0000-0000-0000-00005e46f7f7:Audio
+4=00000000-0000-0000-0000-00005e4718f2:Digital I/O
