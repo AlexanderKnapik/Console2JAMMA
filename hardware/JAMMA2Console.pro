@@ -1,4 +1,4 @@
-update=Mon 22 Jun 2020 06:37:55
+update=Sun 16 Aug 2020 18:34:54
 version=1
 last_client=kicad
 [general]
@@ -12,8 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[SchematicFrame]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -37,6 +35,10 @@ ERC_CheckBusEntryConflicts=1
 ERC_CheckBusToBusConflicts=1
 ERC_CheckBusToNetConflicts=1
 [ModEditFrame]
+version=1
+[LibeditFrame]
+version=1
+[SchematicFrame]
 version=1
 [pcbnew]
 version=1
@@ -354,10 +356,8 @@ uViaDrill=0.1
 dPairWidth=0.220803
 dPairGap=0.290149
 dPairViaGap=0.25
-[LibeditFrame]
-version=1
 [sheetnames]
-1=76af7246-0f95-474a-a17f-e25b1deaf846:
+1=e17405b6-600f-4c94-af46-be9a93e90ec5:
 2=00000000-0000-0000-0000-00005e47086b:Video
 3=00000000-0000-0000-0000-00005e46f7f7:Audio
 4=00000000-0000-0000-0000-00005e4718f2:Digital I/O

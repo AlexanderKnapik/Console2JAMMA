@@ -1407,12 +1407,12 @@
   (junction (at 245.11 156.21))
   (junction (at 278.13 36.83))
 
-  (no_connect (at 106.68 139.7))
-  (no_connect (at 106.68 175.26))
-  (no_connect (at 100.33 223.52))
+  (no_connect (at 106.68 144.78))
   (no_connect (at 106.68 142.24))
   (no_connect (at 106.68 63.5))
-  (no_connect (at 106.68 144.78))
+  (no_connect (at 106.68 139.7))
+  (no_connect (at 100.33 223.52))
+  (no_connect (at 106.68 175.26))
 
   (wire (pts (xy 15.24 20.32) (xy 19.05 20.32))
     (stroke (width 0) (type solid) (color 0 0 0 0))
