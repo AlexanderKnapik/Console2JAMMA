@@ -1,4 +1,4 @@
-update=Sun 16 Aug 2020 18:34:54
+update=Tue 25 Aug 2020 12:44:19
 version=1
 last_client=kicad
 [general]
@@ -40,6 +40,11 @@ version=1
 version=1
 [SchematicFrame]
 version=1
+[sheetnames]
+1=dae59300-0e5a-429a-b557-6fda2f2f307c:
+2=00000000-0000-0000-0000-00005e47086b:Video
+3=00000000-0000-0000-0000-00005e46f7f7:Audio
+4=00000000-0000-0000-0000-00005e4718f2:Digital I/O
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -356,8 +361,3 @@ uViaDrill=0.1
 dPairWidth=0.220803
 dPairGap=0.290149
 dPairViaGap=0.25
-[sheetnames]
-1=e17405b6-600f-4c94-af46-be9a93e90ec5:
-2=00000000-0000-0000-0000-00005e47086b:Video
-3=00000000-0000-0000-0000-00005e46f7f7:Audio
-4=00000000-0000-0000-0000-00005e4718f2:Digital I/O
