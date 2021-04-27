@@ -6,3 +6,9 @@ hardware/JAMMA2Console.jpg
 hardware/*-bak
 hardware/*.bck
 hardware/Gerber
+hardware/JAMMA2Console-backups/
+hardware/bom/
+hardware/JAMMA2ConsoleAdapter/*-bak
+hardware/JAMMA2ConsoleAdapter/JAMMA2ConsoleAdapter-backups
+hardware/JAMMA2ConsoleAdapter/bom
+hardware/JAMMA2Console\\ Adapter/JAMMA2Console\\ Adapter-backups
